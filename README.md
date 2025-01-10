@@ -1,7 +1,7 @@
 # 🔐 CertifyChain - Certificate Management System
 
 <div align="center">
-  <img src="./screenshots/Certification.png" alt="CertifyChain Banner" width="800"/>
+  <img src="./screenshots/CertifyChain.png" alt="CertifyChain Banner" width="800"/>
 </div>
 
 ## 🚀 Overview
