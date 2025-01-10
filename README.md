@@ -1,7 +1,7 @@
 # 🔐 CertifyChain - Certificate Management System
 
 <div align="center">
-  <img src="screenshots/Certification.png" alt="CertifyChain Banner" width="800"/>
+  <img src="./screenshots/Certification.png" alt="CertifyChain Banner" width="800"/>
 </div>
 
 ## 🚀 Overview
@@ -47,12 +47,7 @@ A secure and efficient way to issue and manage digital certificates using cuttin
    npm run dev
    ```
 
-## 📸 Screenshots
-
-### Admin Dashboard
-![Admin Dashboard](screenshots/homepage.png)
-
-## 🤝 Contributing
+## 📸 Contributing
 
 Contributions are welcome! Feel free to:
 - Fork the repository
