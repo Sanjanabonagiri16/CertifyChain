@@ -1,0 +1,73 @@
+:root {
+  /* Primary Colors */
+  --blue-primary: #2563EB;
+  --teal-primary: #14B8A6;
+
+  /* Accent Colors */
+  --amber-accent: #F59E0B;
+  --coral-red: #EF4444;
+  --cyan-accent: #22D3EE;
+
+  /* Neutral Colors */
+  --slate-gray: #4B5563;
+  --off-white: #FAFAFA;
+  --gray-light: #F3F4F6;
+  --white: #FFFFFF;
+
+  /* Semantic Color Mappings */
+  
+  /* Primary Actions */
+  --button-primary-bg: var(--blue-primary);
+  --button-primary-text: var(--white);
+  
+  /* Analytics States */
+  --positive-trend: var(--teal-primary);
+  --negative-trend: var(--coral-red);
+  --highlight-data: var(--cyan-accent);
+  --alert-color: var(--amber-accent);
+  
+  /* Content */
+  --content-bg: var(--off-white);
+  --content-text: var(--slate-gray);
+  --card-bg: var(--white);
+  
+  /* Charts */
+  --chart-primary: var(--blue-primary);
+  --chart-secondary: var(--teal-primary);
+  --chart-accent: var(--cyan-accent);
+  
+  /* Gradients */
+  --bg-gradient: linear-gradient(to bottom, var(--gray-light), var(--white));
+}
+
+/* Usage Example Classes */
+.btn-primary {
+  background-color: var(--button-primary-bg);
+  color: var(--button-primary-text);
+}
+
+.analytics-card {
+  background-color: var(--card-bg);
+  color: var(--content-text);
+}
+
+.trend-positive {
+  color: var(--positive-trend);
+}
+
+.trend-negative {
+  color: var(--negative-trend);
+}
+
+.chart-container {
+  background: var(--bg-gradient);
+}
+
+.data-highlight {
+  color: var(--highlight-data);
+}
+
+.alert-notification {
+  background-color: var(--alert-color);
+  color: var(--white);
+} 
