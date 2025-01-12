@@ -1,65 +1,124 @@
-# 🔐 CertifyChain - Certificate Management System
+# CertifyChain - Blockchain-Based Certificate Management System
 
-<div align="center">
-  <img src="./screenshots/CertifyChain.png" alt="CertifyChain Banner" width="800"/>
-</div>
+A secure and efficient certificate management system built with React, Node.js, and SQLite.
 
-## 🚀 Overview
+## Features
 
-A secure and efficient way to issue and manage digital certificates using cutting-edge blockchain technology. Experience the future of certificate management today.
+- User Authentication (Login/Register)
+- Certificate Issuance
+- Certificate Verification
+- Certificate Management
+- Admin Dashboard
+- User Dashboard
+- QR Code Generation for Certificates
 
-## ✨ Key Features
+## Tech Stack
 
-- 🛡️ **Secure Authentication**: Multi-factor authentication for enhanced security
-- 📜 **Certificate Management**: Easy issuance and verification of digital certificates
-- 👥 **User-Friendly Portals**: Separate interfaces for admins and users
-- 📊 **Analytics Dashboard**: Track and monitor certificate statistics
-- 🔍 **Instant Verification**: Quick and reliable certificate validation
-- 🌐 **Blockchain Technology**: Immutable and transparent certificate records
+- Frontend:
+  - React.js
+  - Tailwind CSS
+  - Axios
+  - React Router
+  - QR Code Generation
 
-## 🛠️ Tech Stack
+- Backend:
+  - Node.js
+  - Express.js
+  - SQLite3
+  - JWT Authentication
+  - bcrypt for password hashing
 
-- Frontend: React.js with TypeScript
-- Styling: Tailwind CSS
-- Backend: Node.js
-- Database: MongoDB
-- Blockchain: Ethereum Smart Contracts
+## Getting Started
 
-## 🚀 Getting Started
+### Prerequisites
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/Sanjanabonagiri16/CertifyChain.git
-   cd CertifyChain
-   ```
+- Node.js (v14 or higher)
+- npm (v6 or higher)
 
-2. **Install Dependencies**
-   ```bash
-   npm install
-   ```
+### Installation
 
-3. **Configure Environment**
-   - Create `.env` file
-   - Set up required environment variables
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/certifychain.git
+cd certifychain
+```
 
-4. **Run Development Server**
-   ```bash
-   npm run dev
-   ```
+2. Install frontend dependencies:
+```bash
+npm install
+```
 
-## 📸 Contributing
+3. Install backend dependencies:
+```bash
+cd backend
+npm install
+```
 
-Contributions are welcome! Feel free to:
-- Fork the repository
-- Create a feature branch
-- Submit a pull request
+4. Create environment files:
 
-## 📄 License
+Frontend (.env):
+```
+REACT_APP_API_URL=http://localhost:5000
+PORT=3000
+```
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Backend (backend/.env):
+```
+PORT=5000
+JWT_SECRET=your_jwt_secret_key
+```
 
-## 📞 Contact
+5. Start the backend server:
+```bash
+cd backend
+npm start
+```
 
-For any queries or support, please reach out to us:
-- Email: support@certifychain.com
-- GitHub: [@Sanjanabonagiri16](https://github.com/Sanjanabonagiri16) 
+6. Start the frontend server (in a new terminal):
+```bash
+npm start
+```
+
+The application will be available at http://localhost:3000
+
+## Project Structure
+
+```
+certifychain/
+├── src/                    # Frontend source files
+│   ├── components/         # React components
+│   ├── context/           # React context providers
+│   └── App.js             # Main App component
+├── backend/               # Backend source files
+│   ├── config/           # Configuration files
+│   ├── routes/           # API routes
+│   ├── middleware/       # Custom middleware
+│   └── server.js         # Express server setup
+└── README.md             # Project documentation
+```
+
+## API Endpoints
+
+### Authentication
+- POST `/api/auth/register` - Register new user
+- POST `/api/auth/login` - User login
+- POST `/api/auth/logout` - User logout
+
+### Certificates
+- POST `/api/certificates` - Issue new certificate
+- GET `/api/certificates/all` - Get all certificates (admin)
+- GET `/api/certificates/my-certificates` - Get user's certificates
+- GET `/api/certificates/verify/:certificateId` - Verify certificate
+- POST `/api/certificates/revoke/:certificateId` - Revoke certificate (admin)
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details. 

@@ -1,0 +1,50 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "CertifyChain Backend API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "create-admin": "node utils/createAdmin.js",
+    "view-data": "node utils/viewData.js",
+    "view-admins": "node utils/viewData.js admin",
+    "view-users": "node utils/viewData.js user",
+    "view-active": "node utils/viewData.js null active",
+    "view-revoked": "node utils/viewData.js null revoked",
+    "test-api": "node utils/testApi.js",
+    "test-users": "node utils/testUserFlow.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "assert": "^2.1.0",
+    "axios": "^1.7.9",
+    "bcryptjs": "^2.4.3",
+    "browserify-zlib": "^0.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "https-browserify": "^1.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.16",
+    "pdfkit": "^0.16.0",
+    "qrcode": "^1.5.4",
+    "speakeasy": "^2.0.0",
+    "sqlite3": "^5.1.6",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.4",
+    "util": "^0.12.5",
+    "uuid": "^11.0.5",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "react-app-rewired": "^2.2.1"
+  }
+}
